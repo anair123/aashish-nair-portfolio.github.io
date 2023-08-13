@@ -5,11 +5,10 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-
 function openTabMedium() {
   window.open("https://medium.com/@aashishnair", "_blank");
   }
 
-  function openTabGitHub() {
-    window.open("https://github.com/anair123", "_blank");
-    }
+function openTabGitHub() {
+  window.open("https://github.com/anair123", "_blank");
+  }
