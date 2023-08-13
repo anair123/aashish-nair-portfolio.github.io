@@ -28,6 +28,16 @@ a,
 
 /* DESKTOP NAV */
 
+
+#hamburger-nav {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 9999; 
+  width: 100%; 
+  height: 50px; 
+}
+
 nav,
 .nav-links {
   display: flex;
@@ -52,10 +62,10 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: green;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: green;
 }
 
 .logo {
@@ -146,6 +156,11 @@ a:hover {
   transform: none;
 }
 
+
+.home-container {
+  padding-top: 100px;
+}
+
 /* SECTIONS */
 
 section {
@@ -199,12 +214,6 @@ section {
   text-align: center;
 }
 
-#socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
 
 /* ICONS */
 
@@ -285,6 +294,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  width: 400px;
 }
 
 .arrow {
@@ -366,8 +376,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 250px;
-  height: 250px;
+  width: 70%;
+  height: 30%;
 }
 
 .project-title {
