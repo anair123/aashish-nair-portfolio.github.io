@@ -1,212 +1,335 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Aashish Nair</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#profile">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Aashish Nair</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aashish Nair - Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Aashish Nair profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Aashish Nair</h1>
-        <p class="section__text__p2">Data Scientist</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Aashish Nair - Data Scientist Resume.pdf')"
-          >
-            Resume
-          </button>
-          <button class="btn btn-color-1"  onclick="openTabGitHub()" > 
-            GitHub
-          </button>
-          <button class="btn btn-color-2" onclick="openTabMedium()">
-            Medium
-          </button>
-        </div>
-        
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-me2.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            
-          </div>
-          <div class="text-container">
-            <p>
-              I am a data scientist with immense passion for all things data! My other interests include sports and cooking.
-            </p>
-          </div>
-        </div>
-      </div>
-     f
-    </section>
-    
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Detecting Faulty Pipelines with Machine Learning</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/anair123/Detecting-Faulty-Water-Pumps-With-Machine-Learning'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://towardsdatascience.com/predicting-the-functionality-of-water-pumps-with-xgboost-8768b07ac7bb#923e'"
-              >
-                Blog Post
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Building a Data Pipeline to Track U.S. Flights</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/anair123/Tracking-U.S.-Flights-With-AWS-and-Power-BI'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://towardsdatascience.com/examining-flights-in-the-u-s-with-aws-and-power-bi-297a29fb2c13'"
-              >
-                Blog Post
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Identifying Popular Songs with Causal Machine Learning</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/anair123/Identifying_Drivers_Of_Song_Popularity_With_Causal_ML'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://towardsdatascience.com/identifying-drivers-of-spotify-song-popularity-with-causal-ml-934e8347d2aa#b34e'"
-              >
-                Blog Post
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:aashishnair8925@gmail.com">aashishnair8925@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#profile">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Home</a></li>
+					<li><a href="#work">Skills</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/pic00.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>Hi. I'm <strong>Aashish Nair</strong>.</h1>
+							</header>
+							<p>Welcome to My Data Science Portfolio!</p>
+							<div class="home-buttons">
+								<a href="javascript:void(0);" onclick="openResumePDF()" class="button large">Resume</a>
+								<a href="https://github.com/anair123" target="_blank" class="button large">GitHub</a>
+								<a href="https://medium.com/@aashishnair" target="_blank" class="button large">Medium</a>
+							</div>
+
+							<!--Open PDF-->
+							<script>
+								function openResumePDF() {
+									// Change 'path_to_your_pdf.pdf' to the actual path of your PDF file
+									var pdfURL = 'other/Aashish Nair - Data Scientist Resume.pdf';
+									window.open(pdfURL, '_blank');
+								}
+							</script>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		<!-- Work -->
+		<article id="work" class="wrapper style2">
+			<div class="container">
+				<header>
+					<h2>These are tasks that I specialize in:</h2>
+					<!--
+					<p>Odio turpis amet sed consequat eget posuere consequat.</p>
+					-->
+				</header>
+				<div class="row aln-center">
+					<div class="col-4 col-6-medium col-12-small">
+						<section class="box style1">
+							<img src="images/ml icon.png" alt="Machine Learning" class="icon-image">
+							<h3 class="h3-smaller-text">Creating Machine Learning Applications</h3>
+							<p>Proficient in developing machine learning applications and APIs, utilizing various algorithms and frameworks such as scikit-learn and Tensorflow. Skilled in model selection, feature engineering, and deployment strategies to create robust and scalable solutions addressing real-world problems.</p>
+						</section>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<section class="box style1">
+							<img src="images/data pipeline icon.png" alt="Data Pipelines" class="icon-image">
+							<h3 class="h3-smaller-text">Building End-To-End Data Pipelines</h3>
+							<p>Experienced in designing and constructing efficient data pipelines using technologies like Amazon Web Services, Apache Airflow, and Apache Spark. Proficiency in data ingestion, transformation, and orchestration, ensuring smooth flow and management of diverse datasets across the pipeline.</p>
+						</section>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<section class="box style1">
+							<img src="images/data visualization icon.png" alt="Data Analysis and Visualization" class="icon-image">
+							<h3 class="h3-smaller-text">Conducting Data Analysis and Visualization</h3>
+							<p>Expertise in conducting comprehensive data analysis using statistical methods and exploratory data analysis techniques. Proficient in BI tools like Power BI and Tableau to present insights effectively, enabling data-driven decision-making and storytelling.</p>
+						</section>
+					</div>
+				</div>
+				<footer>
+					<!--
+					<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+					-->
+					<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+				</footer>
+			</div>
+		</article>
+		<!--
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h2>These are tasks that I specialize in:</h2>
+						<p>Odio turpis amet sed consequat eget posuere consequat.</p>
+					</header>
+					<div class="row aln-center">
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon featured fa-comments"></span>
+								<h3 class="h3-smaller-text">Creating Machine Learning Applications</h3>
+								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon solid featured fa-camera-retro"></span>
+								<h3 class="h3-smaller-text">Building Data Pipelines</h3>
+								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon featured fa-thumbs-up"></span>
+								<h3 class="h3-smaller-text">Conducting Data Analysis and Visualization</h3>
+								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+							</section>
+					</div>
+					<footer>
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+					</footer>
+				</div>
+			</article>
+		-->
+			
+
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Here are some of my recent projects</h2>
+						<!--
+						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+						-->
+					</header>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+
+
+							<article class="box style2">
+								<a href="https://github.com/anair123/Llama2-Powered-QA-Chatbot-For-Research-Papers" target="_blank" class="image featured"><img src="images/chatbot.jpg" alt="" /></a>
+								<h3><a href="https://github.com/anair123/Llama2-Powered-QA-Chatbot-For-Research-Papers" target="_blank">Building a LLM Chatbot with Llama2</a></h3>
+								<p>Tech Stack: Python, LangChain, Huggingface</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="https://github.com/anair123/Detecting-Faulty-Water-Pumps-With-Machine-Learning" target="_blank" class="image featured"><img src="images/water-pump.jpg" alt="" /></a>
+								<h3><a href="https://github.com/anair123/Detecting-Faulty-Water-Pumps-With-Machine-Learning" target="_blank">Identifying Faulty Water Pipes in Tanzania</a></h3>
+								<p>Tech Stack: Python, Sci-kit Learn, XGBoost, Heroku</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="https://github.com/anair123/Tracking-U.S.-Flights-With-AWS-and-Power-BI" target="_blank" class="image featured"><img src="images/airport.jpg" alt="" /></a>
+								<h3><a href="https://github.com/anair123/Tracking-U.S.-Flights-With-AWS-and-Power-BI" target="_blank">Analyzing U.S. Flights with AWS and Power BI</a></h3>
+								<p>Tech Stack: AWS (S3, Redshift, Glue), Power BI</p>
+							</article>
+						</div>
+
+
+						<div class="col-4 col-6-medium col-12-small">
+						<article class="box style2">
+							<a href="https://github.com/anair123/Identifying_Drivers_Of_Song_Popularity_With_Causal_ML" target="_blank" class="image featured"><img src="images/samsung.jpg" alt="" /></a>
+							<h3><a href="https://github.com/anair123/Identifying_Drivers_Of_Song_Popularity_With_Causal_ML" target="_blank">Predicting Popularity of Spotify Songs</a></h3>
+							<p>Tech Stack: Python, Seaborn, Sci-kit Learn, Streamlit</p>
+						</article>
+						</div>
+						
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="https://github.com/anair123/Building-a-Youtube-Data-Pipeline-With-AWS-and-Airflow" target="_blank" class="image featured"><img src="images/youtube.png" alt="" /></a>
+								<h3><a href="https://github.com/anair123/Building-a-Youtube-Data-Pipeline-With-AWS-and-Airflow" target="_blank">Building a Youtube Data Pipeline</a></h3>
+								<p>Tech Stack: AWS (EC2, S3), Python, Apache Airflow</p>
+							</article>
+						</div>
+
+
+
+						<!-- ADD PROJECT LATER
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+								<h3><a href="#">Project 6</a></h3>
+								<p>Ornare nulla proin odio consequat.</p>
+							</article>
+						</div>
+
+						-->
+
+					</div>
+					<footer>
+						<!--
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						-->
+						<a href="#contact" class="button large scrolly">Get in touch with me</a>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Contact -->
+		<article id="contact" class="wrapper style4">
+			<div class="container medium">
+				<header>
+					<h2>Feel free to reach out to me!</h2>
+					<p>You can send me a personal message via email</p>
+				</header>
+				<div class="row">
+					<div class="col-12">
+						<form id="sendMessageForm" method="post" action="#">
+							<div class="row">
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send Email Message" id="submitButton" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<script>
+						document.getElementById('sendMessageForm').addEventListener('submit', function(event) {
+							event.preventDefault(); // Prevent the default form submission
+					
+							// Handle the action based on the button click
+							var emailAddress = 'aashishnair8925@gmail.com';
+					
+							var mailtoLink = 'mailto:' + emailAddress;
+							window.location.href = mailtoLink;
+					
+							// You can include additional actions here if needed
+						});
+					</script>
+
+					<div class="col-12">
+						<hr />
+						<h2>You can also find me on...</h2>
+						<ul class="social">
+							
+							<li><a href="https://www.linkedin.com/in/aashish-nair/" target="_blank" class="icon brands fa-linkedin-in" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/anair123" target="_blank" class="icon brands fa-github" title="GitHub"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon brands fa-medium" title="Medium"><span class="label">Medium</span></a></li>
+
+						</ul>
+						<hr />
+					</div>
+				</div>
+
+				
+			</div>
+		</article>
+
+
+		<!--Contact (Original)
+		
+		<article id="contact" class="wrapper style4">
+			<div class="container medium">
+				<header>
+					<h2>Feel free to send me a message!</h2>
+					<p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p>
+				</header>
+				<div class="row">
+					<div class="col-12">
+						<form method="post" action="#">
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="text" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<input type="text" name="subject" id="subject" placeholder="Subject" />
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Message"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+										<li><input type="reset" value="Clear Form" class="alt" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-12">
+						<hr />
+						<h2>You can also find me on...</h2>
+						<ul class="social">
+							
+							<li><a href="#" class="icon brands fa-linkedin-in" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-github" title="GitHub"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon brands fa-medium" title="Medium"><span class="label">Medium</span></a></li>
+
+						</ul>
+						<hr />
+					</div>
+				</div>
+
+				
+			</div>
+		</article>
+		
+		-->
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
+
+<!--
+				<footer>
+					<ul id="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+				-->
+				
